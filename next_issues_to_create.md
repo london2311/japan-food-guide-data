@@ -1,29 +1,36 @@
-# 発信用文言
+# GitHub repository setup
 
-## X投稿案 1
+## Repository name
 
-訪日旅行者向けに、日本のローカル飲食店情報をCSV/JSON化するOSSを作り始めました。
+```txt
+japan-food-guide-data
+```
 
-店舗公式サイト・観光協会・自治体ページなどの公開情報を、営業時間、定休日、予約URL、英語メニュー、食事制限対応などの形で整理するツールです。
+## Description
 
-口コミサイトの無断収集ではなく、公式・公共情報を尊重する方針で進めます。
+```txt
+Open-source toolkit for collecting and structuring public restaurant information in Japan for international travelers.
+```
 
-#OpenSource #Python #JapanTravel #GitHub
+## Website / homepage
 
-## X投稿案 2
+Use the GitHub Pages URL later if enabled. For now, leave blank or use the repository URL.
 
-新しいOSSを公開しました。
+## Topics
 
-Japan Food Guide Data
-日本の飲食店情報を、訪日旅行者向けに構造化するためのPythonツールキットです。
+Add these GitHub topics:
 
-まずは広島サンプルから。
-CSV/JSON出力、差分検出、GitHub Actions、責任あるデータ利用の注意書きまで入れています。
-
-## note / ブログ冒頭案
-
-訪日旅行者にとって、日本のローカル飲食店情報は意外と探しにくいものです。営業時間、定休日、予約方法、現金のみか、英語メニューがあるか、ベジタリアン対応があるか。こうした情報は、店舗公式サイト、観光協会、自治体ページ、商店街ページなどに分散しています。
-
-そこで、日本語の公開情報をCSV/JSONとして整理し、旅行者向けフードガイドや地域観光データセットの土台にできるOSS「Japan Food Guide Data」を作り始めました。
-
-このプロジェクトでは、口コミサイトのレビュー本文や写真、独自評価点を無断で収集することは目的にしていません。公式・公共情報を尊重しながら、旅行者に役立つ形で情報を構造化することを目指します。
+```txt
+python
+open-source
+japan
+travel
+food-guide
+restaurant-data
+public-data
+csv
+json
+github-actions
+web-data
+tourism
+```

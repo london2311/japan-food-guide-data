@@ -1,53 +1,33 @@
-# Next GitHub Issues to create
+# 使い方
 
-Create these issues after the first three are already opened.
+## 1. インストール
 
-## 4. Add responsible request throttling and source delay settings
+```bash
+pip install -r requirements.txt
+```
 
-Add configuration for polite request intervals when collecting from public websites.
+## 2. サンプル実行
 
-Tasks:
-- Add default delay setting
-- Document source-site load considerations
-- Add tests for configuration parsing
-- Add warning in README
+```bash
+python run_sample.py
+```
 
-## 5. Add link checker for official_url and source_url
+## 3. 出力確認
 
-Add a utility that checks whether collected URLs are reachable.
+```txt
+data/hiroshima/restaurants.csv
+data/hiroshima/restaurants.json
+data/hiroshima/diff_report.json
+```
 
-Tasks:
-- Check HTTP status codes
-- Save broken-link report
-- Add tests with mocked responses
-- Document how to run the checker
+## 4. 実サイト対応の考え方
 
-## 6. Add GitHub Pages sample viewer
+まずは対象サイトの利用規約とrobots.txtを確認してください。
+そのうえで、店舗公式サイト、観光協会、自治体ページなど、公開情報として整理しやすいページを対象にします。
 
-Create a simple static page that displays the sample CSV/JSON data.
+新しいページに対応する場合は、`collectors/sample_html_collector.py` を参考にして、専用collectorを作成します。
 
-Tasks:
-- Add a minimal HTML viewer
-- Load sample JSON
-- Display area, genre, opening hours, and source URL
-- Add deployment notes
+## 5. GitHub Actionsで定期実行
 
-## 7. Add multilingual export helper
-
-Add helper fields for English-friendly outputs.
-
-Tasks:
-- Define translation-ready fields
-- Add sample English descriptions
-- Keep source text and generated text separate
-- Document review requirements before publication
-
-## 8. Add Kyoto/Osaka/Tokyo sample dataset placeholders
-
-Prepare future sample directories for other travel destinations.
-
-Tasks:
-- Add data directories
-- Add placeholder README files
-- Define source-selection criteria
-- Avoid collecting from review platforms
+`.github/workflows/daily_collect.yml` にサンプルを入れています。
+毎日自動で `python run_sample.py` を実行する構成です。

@@ -1,20 +1,56 @@
-# Release v0.1.0
-
-Initial public prototype of Japan Food Guide Data.
-
-## Added
-
-- Sample Hiroshima restaurant HTML
-- CSV/JSON output generation
-- Diff report generation
-- Travel-friendly restaurant schema
-- Responsible-use documentation
-- GitHub Actions daily collection workflow
-- Issue templates
-- Contributing guide
-- Code of conduct
-- pytest sample test
-
-## Notes
-
-This release is an early OSS prototype. It is designed for responsible collection of public and official-friendly restaurant information. It does not collect or redistribute proprietary review text, photos, or ratings from third-party platforms.
+[
+  {
+    "id": "05a8b1a779b0",
+    "name_ja": "お好み焼き ひろしま庵",
+    "name_en": "Okonomiyaki Hiroshima An",
+    "area": "Hiroshima Station",
+    "city": "Hiroshima",
+    "address": "広島県広島市南区サンプル1-2-3",
+    "genre": "Okonomiyaki",
+    "tags": "local specialty, casual, counter seats",
+    "official_url": "https://example.com/hiroshima-an",
+    "reservation_url": "https://example.com/hiroshima-an/reserve",
+    "opening_hours": "11:00-14:30 / 17:00-21:00",
+    "closed_days": "Wednesday",
+    "price_lunch": "1000-2000 JPY",
+    "price_dinner": "2000-3000 JPY",
+    "cashless": "yes",
+    "english_menu": "yes",
+    "vegetarian_friendly": "ask staff",
+    "halal_friendly": "unknown",
+    "solo_friendly": "yes",
+    "family_friendly": "yes",
+    "nearest_station": "Hiroshima Station",
+    "local_specialty": "Hiroshima-style okonomiyaki",
+    "source_url": "examples/hiroshima/sample_restaurants.html",
+    "last_checked": "2026-06-17",
+    "notes": "Sample data. Replace with official public source data."
+  },
+  {
+    "id": "4db90fa99b92",
+    "name_ja": "瀬戸内小料理 みやじま",
+    "name_en": "Setouchi Koryori Miyajima",
+    "area": "Miyajima",
+    "city": "Hatsukaichi",
+    "address": "広島県廿日市市サンプル4-5-6",
+    "genre": "Japanese local cuisine",
+    "tags": "setouchi seafood, local sake, quiet",
+    "official_url": "https://example.com/miyajima-koryori",
+    "reservation_url": "",
+    "opening_hours": "12:00-15:00 / 18:00-22:00",
+    "closed_days": "Monday",
+    "price_lunch": "2000-3000 JPY",
+    "price_dinner": "5000-8000 JPY",
+    "cashless": "partial",
+    "english_menu": "no",
+    "vegetarian_friendly": "no",
+    "halal_friendly": "no",
+    "solo_friendly": "yes",
+    "family_friendly": "ask staff",
+    "nearest_station": "Miyajimaguchi Station",
+    "local_specialty": "Setouchi seafood",
+    "source_url": "examples/hiroshima/sample_restaurants.html",
+    "last_checked": "2026-06-17",
+    "notes": "Sample data. Replace with official public source data."
+  }
+]

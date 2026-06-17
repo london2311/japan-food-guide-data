@@ -1,21 +1,29 @@
-MIT License
+# Roadmap
 
-Copyright (c) 2026
+## v0.1.x - Stabilize the prototype
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+- Add schema validation for `restaurants.csv` and `restaurants.json`
+- Add link validation for official and source URLs
+- Add better error messages for malformed HTML
+- Add Google Colab tutorial for beginners
+- Add GitHub Pages sample viewer
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+## v0.2.x - Real-world public sources
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+- Add Hiroshima tourism association collector
+- Add municipal food/tourism page collector template
+- Add official restaurant website parser template
+- Add source freshness checks
+- Add polite request throttling and robots.txt notes
+
+## v0.3.x - Travel-friendly exports
+
+- Add multilingual export helper
+- Add dietary option normalization
+- Add accessibility fields
+- Add map-friendly GeoJSON export
+- Add sample datasets for Kyoto, Osaka, and Tokyo
+
+## Maintenance workflow
+
+The project will be maintained through GitHub Issues, pull requests, tests, releases, and scheduled GitHub Actions runs. Codex can support issue triage, PR review, collector implementation, test creation, documentation updates, and release preparation.

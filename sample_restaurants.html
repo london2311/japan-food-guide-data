@@ -1,37 +1,40 @@
-# OpenAI Codex for Open Source - Application Draft
+# データスキーマ
 
-Repository URL:
+このプロジェクトでは、訪日旅行者が使いやすい飲食店情報をCSV/JSONで保存します。
 
-```txt
-https://github.com/london2311/japan-food-guide-data
-```
+## 主な項目
 
-## Project summary
+| Field | 説明 |
+|---|---|
+| id | 店名と住所から生成する安定ID |
+| name_ja | 日本語店名 |
+| name_en | 英語店名 |
+| area | エリア名 |
+| city | 市区町村 |
+| address | 住所 |
+| genre | 料理ジャンル |
+| tags | 補助タグ。カンマ区切り推奨 |
+| official_url | 店舗公式URL |
+| reservation_url | 予約URL |
+| opening_hours | 営業時間 |
+| closed_days | 定休日 |
+| price_lunch | 昼の価格帯 |
+| price_dinner | 夜の価格帯 |
+| cashless | キャッシュレス対応 |
+| english_menu | 英語メニュー有無 |
+| vegetarian_friendly | ベジタリアン対応 |
+| halal_friendly | ハラール対応 |
+| solo_friendly | 一人利用しやすいか |
+| family_friendly | 家族利用しやすいか |
+| nearest_station | 最寄駅 |
+| local_specialty | 地域名物 |
+| source_url | 情報源URL |
+| last_checked | 最終確認日 |
+| notes | 備考 |
 
-Japan Food Guide Data is an open-source toolkit for collecting and structuring public restaurant information in Japan for international travelers. It focuses on official and public-friendly sources such as restaurant websites, tourism association pages, municipal pages, and shopping-street pages, then exports travel-friendly CSV/JSON datasets.
+## 方針
 
-## Why the project matters
-
-Important restaurant information in Japan is often published only in Japanese and spread across small websites. International travelers may struggle to find reliable details about opening hours, reservations, cashless payment, English menus, dietary options, and local specialties. This project helps structure that public information into reusable datasets while respecting source-site rules and avoiding unauthorized review-platform scraping.
-
-## How I will use Codex / API credits - 500 characters or fewer
-
-```txt
-I will use Codex to maintain Japan Food Guide Data: review PRs, triage issues, implement new collectors for public tourism/municipal restaurant pages, generate tests, improve schema validation, automate GitHub Actions/release workflows, and review responsible-use/security risks around public web data collection.
-```
-
-Character count: 296
-
-## Anything else we should know? - 500 characters or fewer
-
-```txt
-This project serves Japanese local tourism and international travelers by turning scattered public restaurant information into CSV/JSON. It avoids copying proprietary reviews, photos, or platform scores and focuses on official/public-friendly sources. It is early-stage but has a public release, issues, tests, docs, Actions, and a roadmap for active maintenance.
-```
-
-Character count: 356
-
-## Longer explanation for reference
-
-I am building an OSS toolkit that helps collect, normalize, and update public restaurant information in Japan for international travelers. The project is designed around respectful data use: official restaurant websites, tourism association pages, municipal pages, and shopping-street pages are preferred; proprietary review text, platform photos, and private data are not collected.
-
-Codex would directly support the maintenance workload: adding and testing collectors for new source structures, reviewing pull requests, triaging issues, validating schemas, improving GitHub Actions, documenting beginner workflows, and checking for responsible-use and security risks.
+- 不明な項目は空欄または `unknown` とする
+- 断定できない情報は `ask staff` など控えめに記載する
+- 口コミ本文や第三者写真は保存しない
+- 店舗公式・自治体・観光協会などの公開情報を優先する

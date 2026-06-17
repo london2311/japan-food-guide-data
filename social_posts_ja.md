@@ -1,40 +1,37 @@
-# OpenAI Codex for Open Source 応募用メモ
+# OpenAI Codex for Open Source - Application Draft
 
-## 推奨リポジトリ名
+Repository URL:
 
-第一候補: `japan-food-guide-data`
+```txt
+https://github.com/london2311/japan-food-guide-data
+```
 
-理由:
+## Project summary
 
-- 何のプロジェクトか一目で分かる
-- 訪日旅行者向けの公益性が伝わる
-- 「data」が入っているためCSV/JSONデータセット系OSSだと分かる
-- 短すぎず、検索しやすい
-- 競輪など特定領域に限定されず、発展性がある
+Japan Food Guide Data is an open-source toolkit for collecting and structuring public restaurant information in Japan for international travelers. It focuses on official and public-friendly sources such as restaurant websites, tourism association pages, municipal pages, and shopping-street pages, then exports travel-friendly CSV/JSON datasets.
 
-## 1行説明
+## Why the project matters
 
-Open-source toolkit for collecting and structuring public restaurant information in Japan for international travelers.
+Important restaurant information in Japan is often published only in Japanese and spread across small websites. International travelers may struggle to find reliable details about opening hours, reservations, cashless payment, English menus, dietary options, and local specialties. This project helps structure that public information into reusable datasets while respecting source-site rules and avoiding unauthorized review-platform scraping.
 
-## 日本語説明
+## How I will use Codex / API credits - 500 characters or fewer
 
-日本語の店舗公式サイト、観光協会、自治体ページなどに散らばる飲食店情報を、訪日旅行者向けにCSV/JSONとして構造化・継続更新するOSSです。
+```txt
+I will use Codex to maintain Japan Food Guide Data: review PRs, triage issues, implement new collectors for public tourism/municipal restaurant pages, generate tests, improve schema validation, automate GitHub Actions/release workflows, and review responsible-use/security risks around public web data collection.
+```
 
-## 応募時に強調する点
+Character count: 296
 
-- 日本語ローカル情報の壁を下げる
-- 訪日旅行者の食体験を支援する
-- 小規模飲食店や地域観光にも貢献できる
-- 口コミサイトの内容を無断コピーせず、公式・公共情報を尊重する
-- GitHub Actions、テスト、Issue、Releaseを使って継続保守する
-- Codexを使ってcollector追加、テスト作成、レビュー、リファクタリング、セキュリティ確認を効率化したい
+## Anything else we should know? - 500 characters or fewer
 
-## 応募文ドラフト
+```txt
+This project serves Japanese local tourism and international travelers by turning scattered public restaurant information into CSV/JSON. It avoids copying proprietary reviews, photos, or platform scores and focuses on official/public-friendly sources. It is early-stage but has a public release, issues, tests, docs, Actions, and a roadmap for active maintenance.
+```
 
-I maintain Japan Food Guide Data, an open-source toolkit for collecting and structuring public restaurant information in Japan for international travelers.
+Character count: 356
 
-Many local restaurants in Japan publish important information only in Japanese, often on small official websites, tourism association pages, municipal pages, or shopping-street pages. This makes it difficult for international visitors to find reliable information about opening hours, reservations, payment methods, English menus, dietary options, and local specialties.
+## Longer explanation for reference
 
-This project provides collectors, schemas, sample datasets, documentation, tests, and GitHub Actions workflows to continuously update travel-friendly restaurant information as CSV/JSON. The project is designed for responsible data use and does not aim to copy proprietary review text, photos, or ratings from third-party platforms.
+I am building an OSS toolkit that helps collect, normalize, and update public restaurant information in Japan for international travelers. The project is designed around respectful data use: official restaurant websites, tourism association pages, municipal pages, and shopping-street pages are preferred; proprietary review text, platform photos, and private data are not collected.
 
-I would use Codex to reduce maintenance load by generating and reviewing collectors, improving test coverage, triaging issues, writing documentation, checking data schemas, and improving the reliability and security of automated collection workflows.
+Codex would directly support the maintenance workload: adding and testing collectors for new source structures, reviewing pull requests, triaging issues, validating schemas, improving GitHub Actions, documenting beginner workflows, and checking for responsible-use and security risks.

@@ -1,56 +1,53 @@
-[
-  {
-    "id": "05a8b1a779b0",
-    "name_ja": "お好み焼き ひろしま庵",
-    "name_en": "Okonomiyaki Hiroshima An",
-    "area": "Hiroshima Station",
-    "city": "Hiroshima",
-    "address": "広島県広島市南区サンプル1-2-3",
-    "genre": "Okonomiyaki",
-    "tags": "local specialty, casual, counter seats",
-    "official_url": "https://example.com/hiroshima-an",
-    "reservation_url": "https://example.com/hiroshima-an/reserve",
-    "opening_hours": "11:00-14:30 / 17:00-21:00",
-    "closed_days": "Wednesday",
-    "price_lunch": "1000-2000 JPY",
-    "price_dinner": "2000-3000 JPY",
-    "cashless": "yes",
-    "english_menu": "yes",
-    "vegetarian_friendly": "ask staff",
-    "halal_friendly": "unknown",
-    "solo_friendly": "yes",
-    "family_friendly": "yes",
-    "nearest_station": "Hiroshima Station",
-    "local_specialty": "Hiroshima-style okonomiyaki",
-    "source_url": "examples/hiroshima/sample_restaurants.html",
-    "last_checked": "2026-06-17",
-    "notes": "Sample data. Replace with official public source data."
-  },
-  {
-    "id": "4db90fa99b92",
-    "name_ja": "瀬戸内小料理 みやじま",
-    "name_en": "Setouchi Koryori Miyajima",
-    "area": "Miyajima",
-    "city": "Hatsukaichi",
-    "address": "広島県廿日市市サンプル4-5-6",
-    "genre": "Japanese local cuisine",
-    "tags": "setouchi seafood, local sake, quiet",
-    "official_url": "https://example.com/miyajima-koryori",
-    "reservation_url": "",
-    "opening_hours": "12:00-15:00 / 18:00-22:00",
-    "closed_days": "Monday",
-    "price_lunch": "2000-3000 JPY",
-    "price_dinner": "5000-8000 JPY",
-    "cashless": "partial",
-    "english_menu": "no",
-    "vegetarian_friendly": "no",
-    "halal_friendly": "no",
-    "solo_friendly": "yes",
-    "family_friendly": "ask staff",
-    "nearest_station": "Miyajimaguchi Station",
-    "local_specialty": "Setouchi seafood",
-    "source_url": "examples/hiroshima/sample_restaurants.html",
-    "last_checked": "2026-06-17",
-    "notes": "Sample data. Replace with official public source data."
-  }
-]
+# Next GitHub Issues to create
+
+Create these issues after the first three are already opened.
+
+## 4. Add responsible request throttling and source delay settings
+
+Add configuration for polite request intervals when collecting from public websites.
+
+Tasks:
+- Add default delay setting
+- Document source-site load considerations
+- Add tests for configuration parsing
+- Add warning in README
+
+## 5. Add link checker for official_url and source_url
+
+Add a utility that checks whether collected URLs are reachable.
+
+Tasks:
+- Check HTTP status codes
+- Save broken-link report
+- Add tests with mocked responses
+- Document how to run the checker
+
+## 6. Add GitHub Pages sample viewer
+
+Create a simple static page that displays the sample CSV/JSON data.
+
+Tasks:
+- Add a minimal HTML viewer
+- Load sample JSON
+- Display area, genre, opening hours, and source URL
+- Add deployment notes
+
+## 7. Add multilingual export helper
+
+Add helper fields for English-friendly outputs.
+
+Tasks:
+- Define translation-ready fields
+- Add sample English descriptions
+- Keep source text and generated text separate
+- Document review requirements before publication
+
+## 8. Add Kyoto/Osaka/Tokyo sample dataset placeholders
+
+Prepare future sample directories for other travel destinations.
+
+Tasks:
+- Add data directories
+- Add placeholder README files
+- Define source-selection criteria
+- Avoid collecting from review platforms
