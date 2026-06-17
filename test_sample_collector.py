@@ -1,20 +1,36 @@
-# Release v0.1.0
+# GitHub repository setup
 
-Initial public prototype of Japan Food Guide Data.
+## Repository name
 
-## Added
+```txt
+japan-food-guide-data
+```
 
-- Sample Hiroshima restaurant HTML
-- CSV/JSON output generation
-- Diff report generation
-- Travel-friendly restaurant schema
-- Responsible-use documentation
-- GitHub Actions daily collection workflow
-- Issue templates
-- Contributing guide
-- Code of conduct
-- pytest sample test
+## Description
 
-## Notes
+```txt
+Open-source toolkit for collecting and structuring public restaurant information in Japan for international travelers.
+```
 
-This release is an early OSS prototype. It is designed for responsible collection of public and official-friendly restaurant information. It does not collect or redistribute proprietary review text, photos, or ratings from third-party platforms.
+## Website / homepage
+
+Use the GitHub Pages URL later if enabled. For now, leave blank or use the repository URL.
+
+## Topics
+
+Add these GitHub topics:
+
+```txt
+python
+open-source
+japan
+travel
+food-guide
+restaurant-data
+public-data
+csv
+json
+github-actions
+web-data
+tourism
+```

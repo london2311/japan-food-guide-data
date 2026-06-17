@@ -1,11 +1,13 @@
-from pathlib import Path
+# Code of Conduct
 
-from collectors.sample_html_collector import collect_from_sample_html
+This project aims to be welcoming and practical.
 
+Participants are expected to:
 
-def test_collect_from_sample_html():
-    root = Path(__file__).resolve().parents[1]
-    restaurants = collect_from_sample_html(root / "examples" / "hiroshima" / "sample_restaurants.html")
-    assert len(restaurants) == 2
-    assert restaurants[0].name_ja == "お好み焼き ひろしま庵"
-    assert restaurants[0].local_specialty == "Hiroshima-style okonomiyaki"
+- communicate respectfully
+- assume good intent
+- avoid harassment or personal attacks
+- respect website owners, data rights, and local businesses
+- prioritize responsible and lawful data use
+
+Maintainers may remove comments, issues, pull requests, or contributions that violate these expectations.

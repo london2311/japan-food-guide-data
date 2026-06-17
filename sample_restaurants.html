@@ -1,75 +1,37 @@
-# 初期Issue案
+# OpenAI Codex for Open Source - Application Draft
 
-GitHubにアップした後、以下のIssueを作ると「保守されているOSS」に見えやすくなります。
+Repository URL:
 
-## Issue 1
+```txt
+https://github.com/london2311/japan-food-guide-data
+```
 
-Title: Add tourism association page collector for Hiroshima
+## Project summary
 
-Body:
-Create a collector template for public tourism association restaurant list pages. The collector should extract name, area, official URL, genre, and source URL when permitted by the target site.
+Japan Food Guide Data is an open-source toolkit for collecting and structuring public restaurant information in Japan for international travelers. It focuses on official and public-friendly sources such as restaurant websites, tourism association pages, municipal pages, and shopping-street pages, then exports travel-friendly CSV/JSON datasets.
 
-Labels: enhancement, data-source
+## Why the project matters
 
-## Issue 2
+Important restaurant information in Japan is often published only in Japanese and spread across small websites. International travelers may struggle to find reliable details about opening hours, reservations, cashless payment, English menus, dietary options, and local specialties. This project helps structure that public information into reusable datasets while respecting source-site rules and avoiding unauthorized review-platform scraping.
 
-Title: Add schema validation for restaurants.csv
+## How I will use Codex / API credits - 500 characters or fewer
 
-Body:
-Add validation for required fields such as id, name_ja, area, city, source_url, and last_checked. Invalid rows should be reported with clear error messages.
+```txt
+I will use Codex to maintain Japan Food Guide Data: review PRs, triage issues, implement new collectors for public tourism/municipal restaurant pages, generate tests, improve schema validation, automate GitHub Actions/release workflows, and review responsible-use/security risks around public web data collection.
+```
 
-Labels: enhancement, good first issue
+Character count: 296
 
-## Issue 3
+## Anything else we should know? - 500 characters or fewer
 
-Title: Add Google Colab tutorial for beginners
+```txt
+This project serves Japanese local tourism and international travelers by turning scattered public restaurant information into CSV/JSON. It avoids copying proprietary reviews, photos, or platform scores and focuses on official/public-friendly sources. It is early-stage but has a public release, issues, tests, docs, Actions, and a roadmap for active maintenance.
+```
 
-Body:
-Create a beginner-friendly Colab guide that runs the sample collector and explains how CSV/JSON outputs are generated.
+Character count: 356
 
-Labels: documentation, good first issue
+## Longer explanation for reference
 
-## Issue 4
+I am building an OSS toolkit that helps collect, normalize, and update public restaurant information in Japan for international travelers. The project is designed around respectful data use: official restaurant websites, tourism association pages, municipal pages, and shopping-street pages are preferred; proprietary review text, platform photos, and private data are not collected.
 
-Title: Add multilingual export helper
-
-Body:
-Add a helper script that prepares fields for English, Chinese, and Korean guide generation without overwriting the original Japanese source fields.
-
-Labels: enhancement
-
-## Issue 5
-
-Title: Add responsible source checklist to pull request template
-
-Body:
-Create a pull request template that asks contributors to confirm source terms, robots.txt, access frequency, and whether redistribution is allowed.
-
-Labels: documentation, governance
-
-## Issue 6
-
-Title: Add GitHub Pages sample viewer
-
-Body:
-Create a simple static page that displays the sample Hiroshima restaurant dataset from JSON.
-
-Labels: enhancement, frontend
-
-## Issue 7
-
-Title: Add link freshness checker
-
-Body:
-Add a script that checks whether official_url and source_url are reachable and logs stale or broken links.
-
-Labels: enhancement, maintenance
-
-## Issue 8
-
-Title: Add sample dataset for Miyajima area
-
-Body:
-Add a small sample dataset for Miyajima using official or tourism-friendly public sources.
-
-Labels: data-source, good first issue
+Codex would directly support the maintenance workload: adding and testing collectors for new source structures, reviewing pull requests, triaging issues, validating schemas, improving GitHub Actions, documenting beginner workflows, and checking for responsible-use and security risks.

@@ -1,29 +1,53 @@
-# 発信用文言
+# Next GitHub Issues to create
 
-## X投稿案 1
+Create these issues after the first three are already opened.
 
-訪日旅行者向けに、日本のローカル飲食店情報をCSV/JSON化するOSSを作り始めました。
+## 4. Add responsible request throttling and source delay settings
 
-店舗公式サイト・観光協会・自治体ページなどの公開情報を、営業時間、定休日、予約URL、英語メニュー、食事制限対応などの形で整理するツールです。
+Add configuration for polite request intervals when collecting from public websites.
 
-口コミサイトの無断収集ではなく、公式・公共情報を尊重する方針で進めます。
+Tasks:
+- Add default delay setting
+- Document source-site load considerations
+- Add tests for configuration parsing
+- Add warning in README
 
-#OpenSource #Python #JapanTravel #GitHub
+## 5. Add link checker for official_url and source_url
 
-## X投稿案 2
+Add a utility that checks whether collected URLs are reachable.
 
-新しいOSSを公開しました。
+Tasks:
+- Check HTTP status codes
+- Save broken-link report
+- Add tests with mocked responses
+- Document how to run the checker
 
-Japan Food Guide Data
-日本の飲食店情報を、訪日旅行者向けに構造化するためのPythonツールキットです。
+## 6. Add GitHub Pages sample viewer
 
-まずは広島サンプルから。
-CSV/JSON出力、差分検出、GitHub Actions、責任あるデータ利用の注意書きまで入れています。
+Create a simple static page that displays the sample CSV/JSON data.
 
-## note / ブログ冒頭案
+Tasks:
+- Add a minimal HTML viewer
+- Load sample JSON
+- Display area, genre, opening hours, and source URL
+- Add deployment notes
 
-訪日旅行者にとって、日本のローカル飲食店情報は意外と探しにくいものです。営業時間、定休日、予約方法、現金のみか、英語メニューがあるか、ベジタリアン対応があるか。こうした情報は、店舗公式サイト、観光協会、自治体ページ、商店街ページなどに分散しています。
+## 7. Add multilingual export helper
 
-そこで、日本語の公開情報をCSV/JSONとして整理し、旅行者向けフードガイドや地域観光データセットの土台にできるOSS「Japan Food Guide Data」を作り始めました。
+Add helper fields for English-friendly outputs.
 
-このプロジェクトでは、口コミサイトのレビュー本文や写真、独自評価点を無断で収集することは目的にしていません。公式・公共情報を尊重しながら、旅行者に役立つ形で情報を構造化することを目指します。
+Tasks:
+- Define translation-ready fields
+- Add sample English descriptions
+- Keep source text and generated text separate
+- Document review requirements before publication
+
+## 8. Add Kyoto/Osaka/Tokyo sample dataset placeholders
+
+Prepare future sample directories for other travel destinations.
+
+Tasks:
+- Add data directories
+- Add placeholder README files
+- Define source-selection criteria
+- Avoid collecting from review platforms
